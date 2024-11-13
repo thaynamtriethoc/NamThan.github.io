@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fish Tank</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="fish-container">
+                <img src="../container/bubble.png" class="bubble" alt="bubble">
+                <img src="../container/diver1.png" class="diver1" alt="diver1">
+                <img src="../container/diver2.png" class="diver2" alt="diver2">
+                <img src="../container/shark.png" class="shark" alt="shark">
+                <img src="../container/faintfish.png" class="faintfish" alt="faintfish">
+                <img src="../container/goldfish.png" class="goldfish" alt="goldfish">
+            </div>
+            <div class="music">
+                <audio autoplay controls class="audio" id="audio">
+                    <source src="../container/music.mp3" type="audio/mp3">
+                </audio>
+            <div class="box-song play">
+            </div>  
+            <div class="song-slider">
+                <input type="range" value="0" class="seek-bar">
+            </div>
+            <div class="controls">
+                <button class="btn-play">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #87CEEB; /* Màu nền giống màu nước */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#water{
+    width: 80%;
+    height: 60%;
+    background-color: #4682B4; /* Màu hồ nước */
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#fish-1{
+   top: 50px;
+    right: 30px;
+    position: absolute;
+    animation: swim 10s infinite linear;
+}
+
+#fish-2 {
+    top: 50%;
+    border-radius: 50%;
+    position: absolute;
+    animation: swim 3s infinite linear;
+}
+
+
+@keyframes swim {
+    0% {
+        left: -60px;
+    }
+    50% {
+        left: 80%;
+    }
+    100% {
+        left: -60px;
+    }
+}
